@@ -1,6 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
 import React from 'react';
+import Header from './components/Header';
+import Home from './components/Home';
+
 
 function App() {
   const name = 'john';
@@ -21,9 +24,12 @@ function App() {
         <table>
           <Row />
           <Column />
+         { /* component from header.js */}
+          <Header/>
+          <Home/>
         </table>
       </div>
-    </>
+    </> 
   );
 }
 
