@@ -1,0 +1,12 @@
+.para {
+    color: green;
+}
+.header {
+    color: rgb(255, 255, 255);
+    background-color: blueviolet;
+    padding: 10px;
+}
+.div-header {
+    background-color: black;
+    padding: 20px;
+} 
