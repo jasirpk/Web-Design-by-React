@@ -3,6 +3,8 @@ import './App.css';
 import React from 'react';
 import Header from './components/Header';
 import Home from './components/Home';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 
 function App() {
@@ -20,7 +22,7 @@ function App() {
       <h1>{a + b}</h1>
       <h2>{message()}</h2>
 
-      <div>
+      <div className='appBetween'>
         <table>
           <Row />
           <Column />
