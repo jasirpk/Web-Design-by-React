@@ -2,6 +2,12 @@ import React from 'react'
 import { Button, Table, Accordion, Card, ListGroup, Navbar, Container, Nav } from 'react-bootstrap';
 
 const Header = () => {
+  const clickHandler = () => {
+    console.log("Button clicked");
+  }
+  const dbClickHandler = ( name) => {
+    alert("Button double clicked " + name);
+  }
   return (
     <>
     <Container>
@@ -17,9 +23,12 @@ const Header = () => {
         </Container>
       </Navbar>
       <h1>Hellow world</h1>
-      <Button variant="primary">Primary</Button>
+
+
+
+      <Button onClick = {clickHandler} variant="primary">Primary</Button>
       <br />
-      <Button variant="secondary">Secondary</Button>
+      <Button onDoubleClick={()=>dbClickHandler("John Doe")} variant="secondary">Secondary</Button>
       <Table striped bordered hover variant="dark">
         <thead>
           <tr>
