@@ -4,6 +4,8 @@ import React from 'react';
 import Header from './components/Header';
 import Home from './components/Home';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import States from './components/States';
+import { Container } from 'react-bootstrap';
 
 
 
@@ -14,6 +16,11 @@ function App() {
   const message = () => {
     return "Welcome to React!";
   }
+  const states =[
+    {name: "Kerala", language: "Malayalam", Population: "1000"},
+    {name: "Tamil Nadu", language: "Tamil", Population: "10000"},
+    {name: "Karnataka", language: "Kannada", Population: "100000"}
+  ]
   return (
 
     <>
@@ -28,7 +35,10 @@ function App() {
           <Column />
          { /* component from header.js */}
           <Header/>
-          <Home/>
+          {/* <Home/> */}
+         <Container>
+          <States states= {states} />
+         </Container>
         </table>
       </div>
     </> 
