@@ -1,11 +1,11 @@
-import logo from './logo.svg';
 import './App.css';
 import React from 'react';
 import Header from './components/Header';
-import Home from './components/Home';
+// import Home from './components/Home';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import States from './components/States';
 import { Container } from 'react-bootstrap';
+import Keys  from './components/keys';
 
 
 
@@ -39,6 +39,7 @@ function App() {
          <Container>
           <States states= {states} />
          </Container>
+         <Keys />
         </table>
       </div>
     </> 
