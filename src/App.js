@@ -7,6 +7,7 @@ import States from './components/States';
 import { Container } from 'react-bootstrap';
 import Keys from './components/Keys';
 import Products from './components/Proudcts/Products';
+import Effects from './components/Effects';
 
 
 
@@ -48,6 +49,7 @@ function App() {
     <div className='App'>
       <Container>
         <Products />
+        <Effects />
       </Container>
     </div>
   );
