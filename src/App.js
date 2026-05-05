@@ -9,6 +9,7 @@ import Keys from './components/Keys/Keys';
 import Products from './components/Proudcts/Products';
 import Effects from './components/Effects/Effects';
 import { useEffect, useState } from 'react';
+import MainRounter from './components/ReactRouter/MainRounter';
 
 
 
@@ -26,16 +27,9 @@ function App() {
   return (
 
     <div className='App'>
-      <h1>Fetch Api Data </h1>
 
-      {
-        posts.map((post) => (
-          <div key={post.id}>
-            <h2>{post.title}</h2>
-            <p>{post.body}</p>
-          </div>
-        ))
-      }
+
+      <MainRounter />
     </div>
 
 
