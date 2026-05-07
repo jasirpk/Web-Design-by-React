@@ -10,6 +10,7 @@ import Products from './components/Proudcts/Products';
 import Effects from './components/Effects/Effects';
 import { useEffect, useState } from 'react';
 import MainRounter from './components/ReactRouter/MainRounter';
+import Todo from './components/TodoApp/Todo/Todo';
 
 
 
@@ -27,9 +28,7 @@ function App() {
   return (
 
     <div className='App'>
-
-
-      <MainRounter />
+      <Todo />
     </div>
 
 
