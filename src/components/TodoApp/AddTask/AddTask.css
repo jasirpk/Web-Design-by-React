@@ -1,0 +1,26 @@
+.input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    border: 2px solid #ccc;
+    border-radius: 1em;
+    padding: 0.5em;
+}
+.input {
+    padding: 0.5em;
+    border: none;
+    border-radius: 1em;
+    font-size: 1em;
+    width: 80%;
+}
+.button {
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 1em;
+    font-size: 1em;
+    background-color: teal;
+    color: white;
+    margin: 2px;
+    cursor: pointer;
+}
