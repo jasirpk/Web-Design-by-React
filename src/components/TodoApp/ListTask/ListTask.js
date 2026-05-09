@@ -1,8 +1,13 @@
 import React from 'react'
+import './ListTask.css'
 
-const ListTask = () => {
+const ListTask = ({ task , removeTask, index}) => {
   return (
-    <div>ListTask</div>
+    <>
+      <div className='list-task'>{task.title}
+        <button className='delete-btn' onClick={() => removeTask(index)}>Delete</button>
+      </div>
+    </>
   )
 }
 

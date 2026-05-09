@@ -1,0 +1,16 @@
+.list-task {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+.delete-btn {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 1em;
+  font-size: 0.9em;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+}
